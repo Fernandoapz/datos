@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" name="fernandoapz">
+        <h1>Ingresar 3 calificaciones<h1>
+        <input type="number" name="notas1" min="0" placeholder="1° calificación" requerid> *30<br><br>
+        <input type="number" name="notas1" min="0" placeholder="2° calificación" requerid> *30<br><br>
+        <input type="number" name="notas1" min="0" placeholder="3° calificación" requerid> *30<br><br>
+        <input type="submit" name="btnresul" value="Calcular">
+    </form>
+    <?php
+    if(isset($_POST["btnresul"]))
+        $var1 = POST["nota1"];
+        $var2 = POST["nota2"];
+        $var3 = POST["nota3"];
+        echo "<h1>Resultado</h1>";
+        echo "1° calificación: $var1 por 30: ".($var1*30)."<br><br>";
+        echo "2° calificación: $var1 por 30: ".($var2*20)."<br><br>";
+        echo "3° calificación: $var1 por 30: ".($var3*10)."<br><br>";
+</body>
+</html>
